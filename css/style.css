@@ -1,28 +1,35 @@
 @font-face {
 	font-family: Roboto;
-	src: url(../fonts/Roboto-Regular.ttf);
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Roboto;
-	src: url(../fonts/Roboto-Medium.ttf);
+	src: url(../fonts/Roboto/Roboto-Medium.ttf);
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Roboto;
-	src: url(../fonts/Roboto-Bold.ttf);
+	src: url(../fonts/Roboto/Roboto-Bold.ttf);
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Roboto;
-	src: url(../fonts/Roboto-Black.ttf);
+	src: url(../fonts/Roboto/Roboto-Black.ttf);
 	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url(../fonts/Raleway/Raleway-Bold.ttf);
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -699,7 +706,7 @@ img {
 	align-items: center;
 }
 
-.social-link>li:not(:last-child) {
+.social-link > li:not(:last-child) {
 	margin-right: 10px;
 }
 
@@ -926,8 +933,8 @@ textarea.modal-form-field {
 	position: relative;
 }
 
-.modal-form-field:focus+.modal-form-icon,
-.modal-form-field:hover+.modal-form-icon {
+.modal-form-field:focus + .modal-form-icon,
+.modal-form-field:hover + .modal-form-icon {
 	fill: var(--accent-color);
 }
 
@@ -985,7 +992,7 @@ textarea.modal-form-field {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.custom-checkbox:checked+.icon-check {
+.custom-checkbox:checked + .icon-check {
 	background-color: var(--accent-color);
 	background-image: url(../images/icons/icon-check.svg);
 	background-size: contain;
